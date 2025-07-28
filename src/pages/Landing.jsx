@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import axios from "axios";
 import API from "../service/api";
 import { getRandomJoke } from "../service/joke.service";
 
