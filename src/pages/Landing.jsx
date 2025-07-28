@@ -25,7 +25,7 @@ const Landing = () => {
       <h2>Jaune, drôle et complètement barré</h2>
       <div className="joke-container">
         <img
-          src="public/10530-carambar-candies-food.gif"
+          src="/10530-carambar-candies-food.gif"
           alt=""
           className="carambar-gif"
         />
