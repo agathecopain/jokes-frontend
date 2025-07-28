@@ -1,12 +1,58 @@
-# React + Vite
+# Blagues Carambar - Projet CDA
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Mini application web réalisée dans le cadre du projet de sélection CDA.  
+Elle permet d’afficher des blagues aléatoires depuis une API personnalisée.
 
-Currently, two official plugins are available:
+## Liens utiles
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+| Élement             | Lien                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| 🔗 API (Back)        | [https://jokes-backend-lo7h.onrender.com](https://jokes-backend-lo7h.onrender.com) |
+| 📘 Swagger (Docs)    | [https://jokes-backend-lo7h.onrender.com/api-docs/](https://jokes-backend-lo7h.onrender.com/api-docs/) |
+| 🎨 Front (Landing)   | [https://jokes-frontend-9lzzjwozt-agathes-projects-ec7cb569.vercel.app/](https://jokes-frontend-9lzzjwozt-agathes-projects-ec7cb569.vercel.app/) |
+| 💾 Repo GitHub (Back)| [https://github.com/agathecopain/jokes-frontend](https://github.com/agathecopain/jokes-frontend) |
+| 💻 Repo GitHub (Front)| [https://github.com/agathecopain/jokes-backend](https://github.com/agathecopain/jokes-backend) |
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Lancer le projet en local
+
+### 1. Cloner le dépôt
+
+```bash
+git clone https://github.com/ton-profil/jokes-frontend.git
+```
+### 2. Installer le backend
+```bash
+cd jokes-frontend
+yarn
+```
+### 3. Créer un fichier .env
+```bash
+VITE_API_URL=https://jokes-backend-lo7h.onrender.com/api
+```
+
+### 4. Lancer le serveur
+```bash
+yarn dev
+```
+
+## Structure du projet (Frontend)
+```
+jokes-frontend/
+├── public/                 # Fichiers statiques
+│   └── 10530-carambar-candies-food.gif
+│   └── favicon-32x32.png
+├── src/
+│   ├── components/         # Composants React (Footer.jsx, Header.jsx)
+│   ├── pages/              # Page principale (Landing.jsx)
+│   ├── service/            # Services API (api.js, joke.service.js)
+│   ├── App.jsx             
+│   ├── main.jsx            # Point d’entrée de l’application
+│   └── index.css          
+├── .env                    # Variables d’environnement (optionnel)
+├── .gitignore
+├── index.html             
+├── package.json
+├── vite.config.js         
+└── README.md
+```
